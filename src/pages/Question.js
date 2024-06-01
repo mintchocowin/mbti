@@ -12,11 +12,6 @@ const Wrapper = styled.div`
   align-items: center;
   background: skyblue;
 `;
-const Title = styled.div`
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 30px;
-`;
 
 const ButtonGroup = styled.div`
   display: flex;
@@ -63,47 +58,7 @@ const Question = () => {
         search: `?${createSearchParams({ mbti: mbti })}`,
       });
     }
-    // if (type === "EI") {
-    //   const addScore = totalScore[0].score + nu;
-    //   //점수업데이트
-    //   const newObject = { id: "EI", score: addScore };
-    //   //새로운객체만들어주기
-    //   totalScore.splice(0, 1, newObject);
-    //   //여기에 도려내서 넣기
-    // } else if (type === "SN") {
-    //   const addScore = totalScore[1].score + nu;
-    //   const newObject = { id: "SN", score: addScore };
-    //   totalScore.splice(1, 1, newObject);
-    // } else if (type === "TF") {
-    //   const addScore = totalScore[2].score + nu;
-    //   const newObject = { id: "TF", score: addScore };
-    //   totalScore.splice(1, 1, newObject);
-    // } else if (type === "JP") {
-    //   const addScore = totalScore[3].score + nu;
-    //   const newObject = { id: "JP", score: addScore };
-    //   totalScore.splice(3, 1, newObject);
-    // }
-  };
-  // const handleClickButtonB = (nu, type) => {
-  //   if (type === "EI") {
-  //     const addScore = totalScore[0].score + nu;
-  //     const newObject = { id: "EI", score: addScore };
-  //     totalScore.splice(0, 1, newObject);
-  //   } else if (type === "SN") {
-  //     const addScore = totalScore[1].score + nu;
-  //     const newObject = { id: "SN", score: addScore };
-  //     totalScore.splice(1, 1, newObject);
-  //   } else if (type === "TF") {
-  //     const addScore = totalScore[2].score + nu;
-  //     const newObject = { id: "TF", score: addScore };
-  //     totalScore.splice(1, 1, newObject);
-  //   } else if (type === "JP") {
-  //     const addScore = totalScore[3].score + nu;
-  //     const newObject = { id: "JP", score: addScore };
-  //     totalScore.splice(3, 1, newObject);
-  //   }
-  //   setQuestionNu(questionNu + 1);
-  // };
+ 
   return (
     <div>
       <ProgressBar
